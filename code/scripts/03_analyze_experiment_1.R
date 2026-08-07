@@ -721,7 +721,54 @@ ggplot2::ggsave(
 
 
 # ------------------------------------------------------------
-# 12. Save model metadata and R environment
+# 12. Save Holm-adjusted pairwise comparisons
+# ------------------------------------------------------------
+
+save_sentence_contrasts <- function(model, output_file) {
+
+  estimated_means <- emmeans::emmeans(
+    model,
+    ~ sentence_type | event_type
+  )
+
+  contrast_table <- as.data.frame(
+    summary(
+      pairs(
+        estimated_means,
+        adjust = "holm"
+      ),
+      infer = c(TRUE, TRUE)
+    )
+  )
+
+  contrast_table$p_value_adjustment <- "Holm"
+  contrast_table$confidence_interval_adjustment <- "Bonferroni"
+
+  write.csv(
+    contrast_table,
+    output_file,
+    row.names = FALSE
+  )
+}
+
+save_sentence_contrasts(
+  affirmative_results$model,
+  file.path(
+    table_directory,
+    "exp1_affirmative_sentence_contrasts.csv"
+  )
+)
+
+save_sentence_contrasts(
+  negative_results$model,
+  file.path(
+    table_directory,
+    "exp1_negative_sentence_contrasts.csv"
+  )
+)
+
+# ------------------------------------------------------------
+# 13. Save model metadata and R environment
 # ------------------------------------------------------------
 
 model_metadata <- data.frame(
@@ -769,7 +816,7 @@ writeLines(
 
 
 # ------------------------------------------------------------
-# 13. Final summary
+# 14. Final summary
 # ------------------------------------------------------------
 
 message("")
