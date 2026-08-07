@@ -338,7 +338,18 @@ write.csv(
   row.names = FALSE
 )
 
-random_effects <- as.data.frame(glmmTMB::VarCorr(full_model))
+participant_variance_matrix <-
+  glmmTMB::VarCorr(full_model)$cond$participant_id
+
+random_effects <- data.frame(
+  group = "participant_id",
+  term = "(Intercept)",
+  variance = as.numeric(participant_variance_matrix[1, 1]),
+  standard_deviation = as.numeric(
+    attr(participant_variance_matrix, "stddev")[1]
+  ),
+  stringsAsFactors = FALSE
+)
 
 write.csv(
   random_effects,
