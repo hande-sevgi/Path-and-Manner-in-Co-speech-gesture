@@ -132,7 +132,14 @@ Contains the ordered, study-level analysis scripts.
 
 `code/scripts/04_exp1_sensitivity_analysis.R` is an additional post-dissertation sensitivity analysis. It uses ordered-beta regression to retain ratings at exactly 0 and 100, models polarity jointly, and treats the five stimulus scenarios as fixed controls. This analysis supplements rather than replaces the dissertation analysis.
 
-The sensitivity analysis supports the principal directional findings reported in the dissertation. Additional Holm-adjusted pairwise comparisons identify some within-condition differences that were not directly tested by the original treatment-coded coefficient tables. A small number of secondary comparisons involving conflated modification vary across model specifications; these differences do not alter the central Experiment 1 pattern.
+The sensitivity analysis supports the principal directional findings reported in the dissertation. The interaction between modification type, event type, and polarity was significant, p < .001. Global residual uniformity, dispersion, and outlier tests were satisfactory, although the residual-versus-predicted quantile test indicated some remaining conditional model misfit. Additional Holm-adjusted pairwise comparisons identify within-condition differences that were not directly tested by the original treatment-coded coefficient tables. A small number of secondary comparisons involving conflated modification vary across model specifications; these differences and the remaining diagnostic limitation do not alter the central Experiment 1 pattern.
+
+`code/scripts/05_analyze_experiment_2.R` reproduces the beta-regression analyses reported for Experiment 2 in Chapter 3 of the dissertation, including the models presented in Appendix Tables B.4 and B.5. Trials involving no-motion events are excluded to match the original inferential analysis.
+
+`code/scripts/06_exp2_sensitivity_analysis.R` is an additional post-dissertation sensitivity analysis. It uses ordered-beta regression to retain ratings at exactly 0 and 100, models polarity jointly, and treats the five stimulus scenarios as fixed controls. This analysis supplements rather than replaces the dissertation analysis.
+
+The sensitivity analysis supports the principal Experiment 2 finding: matching modification–event combinations receive higher ratings in affirmative contexts and substantially lower ratings under negation. The interaction between modification type, event type, and polarity was significant, χ²(4) = 225.44, p < .001. Global residual uniformity, dispersion, and outlier tests were satisfactory, although the residual-versus-predicted quantile test indicated some remaining conditional model misfit. This limitation does not alter the central Experiment 2 pattern, which remains consistent across the reproduction and sensitivity analyses.
+
 
 ### `analysis/`
 
