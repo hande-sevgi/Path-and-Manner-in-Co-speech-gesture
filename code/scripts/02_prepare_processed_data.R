@@ -417,7 +417,7 @@ prepare_study <- function(
     exclusion_threshold <- as.numeric(
       quantile(
         participant_sd_lookup,
-        probabilities = 0.05,
+        probs = 0.05,
         na.rm = TRUE,
         names = FALSE
       )
