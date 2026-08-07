@@ -1,0 +1,15 @@
+variable,current_column,description,type,permitted_values,applies_to,status
+participant_id,Response_ID,Pseudonymous participant identifier,text,Study-specific identifier,all,source to be renamed
+trial,Trial,Original compact experimental condition code,text,See trial_codes.csv,all,source
+rating,Rating,Participant judgment on the continuous slider,numeric,0-100,all,source
+order,Order,Linear order of path and manner modifiers,category,P_M|M_P,exp1|exp2,source or derived
+polarity,,Sentence polarity,category,affirmative|negative,all,derived
+sentence_type,,Written modification type,category,path|manner|conflated,exp1|exp2,derived
+gesture_type,,Co-speech gesture type,category,path|manner|conflated|none,baseline2|exp3,derived
+event_type,,Event depicted in the animated context,category,path|manner|conflated|no_motion,exp1|exp2|baseline1|exp3,derived
+scenario_code,,Original scenario letter,category,A|B|C|D|E,all,derived
+scenario,,Entity depicted in the scenario,category,leaf|car|paper|plank|chair,all,derived
+item_version,,Numeric suffix in the scenario code,integer,Positive integer,all,derived
+rating_scaled,,Rating transformed to the open interval for beta regression,numeric,Greater than 0 and less than 1,all,derived
+included,,Whether the participant is retained for analysis,boolean,TRUE|FALSE,all,derived
+exclusion_reason,,Documented reason for exclusion,text,Controlled description or blank,all,derived
