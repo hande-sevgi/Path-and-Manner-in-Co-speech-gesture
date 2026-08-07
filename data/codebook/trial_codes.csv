@@ -1,0 +1,21 @@
+dimension,code,label,applies_to
+polarity,Aff,Affirmative,all
+polarity,Neg,Negative,all
+written_modification,P,Path modification,exp1|exp2
+written_modification,M,Manner modification,exp1|exp2
+written_modification,C,Conflated modification,exp1|exp2
+gesture_type,P,Path gesture,baseline2|exp3
+gesture_type,M,Manner gesture,baseline2|exp3
+gesture_type,C,Conflated gesture,baseline2|exp3
+gesture_type,0,No gesture,baseline2
+event_type,P,Path event,exp1|exp2|baseline1|exp3
+event_type,M,Manner event,exp1|exp2|baseline1|exp3
+event_type,C,Conflated event,exp1|exp2|baseline1|exp3
+event_type,0,No motion,exp1|exp2|baseline1|exp3
+scenario,A,Leaf,all
+scenario,B,Car,all
+scenario,C,Paper,all
+scenario,D,Plank,all
+scenario,E,Chair,all
+modifier_order,P_M,Path before manner,exp1
+modifier_order,M_P,Manner before path,exp2
