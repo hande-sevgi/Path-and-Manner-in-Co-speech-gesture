@@ -479,7 +479,7 @@ prepare_study <- function(
   # ----------------------------------------------------------
 
   processed_data <- data.frame(
-    study_id = study_id,
+    study_id = rep(study_id, nrow(data)),
     participant_id = participant_id,
     trial = data$Trial,
     rating = rating,
@@ -505,6 +505,29 @@ prepare_study <- function(
   # ----------------------------------------------------------
   # Validate processed results
   # ----------------------------------------------------------
+
+  message("Input rows: ", nrow(data))
+message("Processed rows: ", nrow(processed_data))
+
+column_lengths <- c(
+  study_id = length(study_id),
+  participant_id = length(participant_id),
+  trial = length(data$Trial),
+  rating = length(rating),
+  polarity = length(polarity),
+  sentence_type = length(sentence_type),
+  gesture_type = length(gesture_type),
+  event_type = length(event_type),
+  scenario_code = length(scenario_code),
+  scenario = length(scenario),
+  scenario_suffix = length(scenario_suffix),
+  modifier_order = length(modifier_order),
+  participant_sd = length(participant_sd),
+  included = length(included),
+  exclusion_reason = length(exclusion_reason)
+)
+
+print(column_lengths)
 
   if (nrow(processed_data) != nrow(data)) {
     stop(
