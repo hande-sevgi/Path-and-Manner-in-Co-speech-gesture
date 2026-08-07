@@ -132,7 +132,7 @@ validate_study <- function(study_id, specification) {
   scenario_position <- specification$trial_parts
   scenario_codes <- trial_matrix[, scenario_position]
 
-  invalid_scenarios <- !grepl("^[A-E]_[0-9]+$", scenario_codes)
+  invalid_scenarios <- !grepl("^[A-E](_[0-9]+)+$", scenario_codes)
 
   if (any(invalid_scenarios)) {
     stop(
