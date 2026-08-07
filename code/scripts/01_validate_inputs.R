@@ -32,7 +32,7 @@ studies <- list(
   baseline1 = list(
     file = "Prelim_Gesture_NoGesture.csv",
     required_columns = c("Response_ID", "Trial", "Rating"),
-    expected_participants = 41L,
+    expected_participants = 40L, # 41 recruited; 1 excluded before this file was shared
     trial_parts = 3L,
     second_codes = c("P", "M", "C", "0"),
     third_codes = NULL
