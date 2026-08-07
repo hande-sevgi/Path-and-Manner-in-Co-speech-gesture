@@ -126,6 +126,14 @@ Contains reusable functions for importing, decoding, validating, anonymizing, mo
 
 Contains the ordered, study-level analysis scripts.
 
+#### Reproduction and sensitivity analyses
+
+`code/scripts/03_analyze_experiment_1.R` reproduces the beta-regression analyses reported for Experiment 1 in Chapter 3 of the dissertation, including the models presented in Tables 3.2 and 3.3.
+
+`code/scripts/04_exp1_sensitivity_analysis.R` is an additional post-dissertation sensitivity analysis. It uses ordered-beta regression to retain ratings at exactly 0 and 100, models polarity jointly, and treats the five stimulus scenarios as fixed controls. This analysis supplements rather than replaces the dissertation analysis.
+
+The sensitivity analysis supports the principal directional findings reported in the dissertation. Additional Holm-adjusted pairwise comparisons identify some within-condition differences that were not directly tested by the original treatment-coded coefficient tables. A small number of secondary comparisons involving conflated modification vary across model specifications; these differences do not alter the central Experiment 1 pattern.
+
 ### `analysis/`
 
 Contains the reproducible research report.
