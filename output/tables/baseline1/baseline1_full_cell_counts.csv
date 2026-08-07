@@ -1,0 +1,9 @@
+"polarity","event_type","observations"
+"affirmative","conflated",50
+"negative","conflated",50
+"affirmative","manner",50
+"negative","manner",50
+"affirmative","path",50
+"negative","path",50
+"affirmative","no_motion",50
+"negative","no_motion",50

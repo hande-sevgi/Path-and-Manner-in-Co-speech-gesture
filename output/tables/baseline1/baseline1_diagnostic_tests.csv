@@ -1,0 +1,4 @@
+"test","statistic","p_value","method"
+"uniformity",0.2,7.55026908855817e-11,"Asymptotic one-sample Kolmogorov-Smirnov test"
+"dispersion",0.613520199185834,0,"DHARMa nonparametric dispersion test via sd of residuals fitted vs. simulated"
+"outliers",3,0.0229179441728095,"DHARMa outlier test based on exact binomial test with approximate expectations"

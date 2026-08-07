@@ -1,0 +1,9 @@
+"model term","df1","df2","F.ratio","Chisq","p.value"
+"sentence_type",2,Inf,5.724,11.448,0.00326608583391991
+"event_type",2,Inf,1.285,2.57,0.276687878286919
+"polarity",1,Inf,190.555,190.555,2.40534246361235e-43
+"scenario",4,Inf,1.225,4.9,0.297856536191139
+"sentence_type:event_type",4,Inf,0.494,1.976,0.739971443681364
+"sentence_type:polarity",2,Inf,7.694,15.388,0.000455734041617273
+"event_type:polarity",2,Inf,43.439,86.878,1.36322070219923e-19
+"sentence_type:event_type:polarity",4,Inf,55.558,222.232,6.20776942189067e-47

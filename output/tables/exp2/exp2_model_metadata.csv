@@ -1,0 +1,3 @@
+"model","observations","participants","positive_definite_hessian","convergence_code","family","link","modifier_order","sentence_reference","sentence_level_2","sentence_level_3","event_reference","event_level_2","event_level_3"
+"affirmative",517,114,TRUE,0,"beta","logit","manner_before_path","conflated","path","manner","conflated","path","manner"
+"negative",509,114,TRUE,0,"beta","logit","manner_before_path","conflated","path","manner","conflated","path","manner"

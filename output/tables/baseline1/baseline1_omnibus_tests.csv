@@ -1,0 +1,4 @@
+"model term","df1","df2","F.ratio","Chisq","p.value"
+"polarity",1,Inf,264.864,264.864,1.4935247854271e-59
+"event_type",2,Inf,0.23,0.46,0.79476394695103
+"polarity:event_type",2,Inf,1.4,2.8,0.246484249950185

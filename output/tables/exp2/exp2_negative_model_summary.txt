@@ -1,0 +1,30 @@
+ Family: beta  ( logit )
+Formula:          rating_scaled ~ sentence_type * event_type + (1 | participant_id) +      (1 | scenario)
+Data: model_data
+
+      AIC       BIC    logLik -2*log(L)  df.resid 
+  -2740.0   -2689.2    1382.0   -2764.0       497 
+
+Random effects:
+
+Conditional model:
+ Groups         Name        Variance  Std.Dev.
+ participant_id (Intercept) 0.2950348 0.54317 
+ scenario       (Intercept) 0.0009513 0.03084 
+Number of obs: 509, groups:  participant_id, 114; scenario, 5
+
+Dispersion parameter for beta family (): 0.674 
+
+Conditional model:
+                           Estimate Std. Error z value Pr(>|z|)    
+(Intercept)                 -1.2364     0.1897  -6.518 7.10e-11 ***
+sentence_type2               0.3403     0.2395   1.421   0.1553    
+sentence_type3               0.0510     0.2504   0.204   0.8386    
+event_type2                  1.5180     0.2517   6.030 1.64e-09 ***
+event_type3                  0.3269     0.2544   1.285   0.1987    
+sentence_type2:event_type2  -1.9852     0.3483  -5.699 1.20e-08 ***
+sentence_type3:event_type2   0.3938     0.3542   1.112   0.2663    
+sentence_type2:event_type3   0.6591     0.3332   1.978   0.0479 *  
+sentence_type3:event_type3  -0.4942     0.3374  -1.465   0.1430    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
