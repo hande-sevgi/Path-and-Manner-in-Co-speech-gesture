@@ -1,1 +1,6 @@
-
+study_id,study_name,description,dataset,recruited_n,analyzed_n
+exp1,Written English path before manner,Written modifiers paired with animated event contexts,exp1_written_path_manner.csv,150,140
+exp2,Written English manner before path,Modifier-order replication paired with animated event contexts,exp2_written_manner_path.csv,120,114
+baseline1,No-gesture baseline,Spoken utterances without gesture paired with animated event contexts,baseline1_no_gesture.csv,41,40
+baseline2,No-event baseline,Spoken utterances with gestures and no animated event context,baseline2_no_event.csv,40,40
+exp3,Co-speech gesture experiment,Spoken utterances with gestures paired with animated event contexts,exp3_cospeech_gesture.csv,150,142
