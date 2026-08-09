@@ -1,16 +1,30 @@
-# macOS
+# macOS system files
 .DS_Store
+.AppleDouble
+.LSOverride
 
 # R session files
 .Rhistory
 .RData
 .Ruserdata
+
+# RStudio project files
 .Rproj.user/
 
-# R package environment
-renv/library/
-renv/staging/
+# R cache directories
+.Rcache/
 
-# Temporary files
+# Temporary and backup files
 *.log
 *.tmp
+*.temp
+*.bak
+*~
+~$*
+
+# Private or sensitive materials
+private/
+confidential/
+data/private/
+data/private_raw/
+data/input/private/
