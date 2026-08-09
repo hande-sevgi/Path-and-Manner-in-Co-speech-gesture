@@ -4,7 +4,7 @@ This directory documents the datasets for the five studies reported in Chapter 3
 
 ## Directories
 
-- `raw/` documents the source data archived on OSF.
+- `input/` documents the source data archived on OSF.
 - `processed/` contains analysis-ready datasets.
 - `codebook/` explains variables, experimental codes, and permissible values.
 
