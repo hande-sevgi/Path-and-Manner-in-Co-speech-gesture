@@ -90,7 +90,7 @@ The principal analyses were conducted in R using packages including:
 .
 ├── README.md
 ├── data/
-│   ├── raw/
+│   ├── input/
 │   ├── processed/
 │   └── codebook/
 ├── materials/
