@@ -1,0 +1,4 @@
+"model term","df1","df2","F.ratio","Chisq","p.value"
+"gesture_type",2,Inf,2.208,4.416,0.109867103031868
+"event_type",2,Inf,1.014,2.028,0.362791996250823
+"gesture_type:event_type",4,Inf,0.422,1.688,0.792728623340948

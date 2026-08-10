@@ -1,0 +1,4 @@
+"model","observations","participants","exact_zero_ratings","exact_hundred_ratings","positive_definite_hessian","convergence_code","family","link","endpoint_transformation"
+"affirmative_motion_events",635,142,4,216,TRUE,0,"beta","logit","epsilon = 1e-6"
+"negative_motion_events",643,142,376,7,TRUE,0,"beta","logit","epsilon = 1e-6"
+"no_motion",426,142,152,69,TRUE,0,"beta","logit","epsilon = 1e-6"

@@ -1,0 +1,4 @@
+"stage","participants","source"
+"Recruited",150,"Dissertation Chapter 3"
+"Excluded for low rating variability",8,"02_prepare_processed_data.R"
+"Included in analysis",142,"data/processed/exp3_cospeech_gesture.csv"
