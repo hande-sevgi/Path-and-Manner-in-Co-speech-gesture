@@ -129,7 +129,19 @@ Preserves the original Chapter 3 R analysis unchanged for provenance.
 
 ### `code/scripts/`
 
-Contains the ordered, study-level analysis scripts.
+Contains the ordered validation, preparation, dissertation-reproduction, and sensitivity-analysis scripts.
+
+| Script           | Purpose         |
+| ---------------- | ------------------------------ |
+| 01_validate_inputs.R    | Validates the five source datasets without modifying them. |
+| 02_prepare_processed_data.R     | Standardizes variables, applies documented exclusions, and creates five analysis-ready datasets. |
+| 03_analyze_experiment_1.R | Reproduces the Experiment 1 beta-regression analyses reported in Chapter 3.    |
+| 04_exp1_sensitivity_analysis.R | Fits a joint ordered-beta sensitivity model for Experiment 1.|
+| 05_analyze_experiment_2.R     | Reproduces the Experiment 2 beta-regression analyses reported in Chapter 3. |
+| 06_exp2_sensitivity_analysis.R    |Fits a joint ordered-beta sensitivity model for Experiment 2. |
+| 7_analyze_baseline_1.R   |Analyses the no-gesture baseline and documents the motion-event inferential subset. |
+| 08_analyze_baseline_2.R   |Analyses the complete four-condition gesture baseline without event context. |
+| 09_analyze_experiment_3.R  |Reproduces the co-speech gesture analyses for motion and no-motion conditions. |
 
 #### Reproduction and sensitivity analyses
 
