@@ -1,0 +1,9 @@
+"polarity","gesture_type","observations"
+"affirmative","conflated",54
+"negative","conflated",50
+"affirmative","manner",50
+"negative","manner",48
+"affirmative","path",49
+"negative","path",51
+"affirmative","none",47
+"negative","none",51

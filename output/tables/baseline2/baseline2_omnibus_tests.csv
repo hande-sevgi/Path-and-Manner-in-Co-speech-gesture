@@ -1,0 +1,4 @@
+"model term","df1","df2","F.ratio","Chisq","p.value"
+"polarity",1,Inf,22.819,22.819,1.78037246986318e-06
+"gesture_type",3,Inf,2.498,7.494,0.0576916748326501
+"polarity:gesture_type",3,Inf,1.449,4.347,0.226338988815744

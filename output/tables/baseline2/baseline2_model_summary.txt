@@ -1,0 +1,30 @@
+ Family: beta  ( logit )
+Formula:          rating_scaled ~ polarity * gesture_type + (1 | participant_id) +  
+    (1 | scenario)
+Data: baseline2
+
+      AIC       BIC    logLik -2*log(L)  df.resid 
+   -965.2    -921.3     493.6    -987.2       389 
+
+Random effects:
+
+Conditional model:
+ Groups         Name        Variance Std.Dev.
+ participant_id (Intercept) 0.70803  0.8414  
+ scenario       (Intercept) 0.05859  0.2420  
+Number of obs: 400, groups:  participant_id, 40; scenario, 5
+
+Dispersion parameter for beta family (): 0.922 
+
+Conditional model:
+                        Estimate Std. Error z value Pr(>|z|)    
+(Intercept)             -0.06697    0.18257  -0.367   0.7137    
+polarity1                0.30326    0.06349   4.777 1.78e-06 ***
+gesture_type1           -0.10928    0.10888  -1.004   0.3155    
+gesture_type2           -0.22668    0.10932  -2.073   0.0381 *  
+gesture_type3            0.12649    0.11016   1.148   0.2509    
+polarity1:gesture_type1  0.14265    0.10919   1.306   0.1914    
+polarity1:gesture_type2 -0.21215    0.11003  -1.928   0.0538 .  
+polarity1:gesture_type3  0.05554    0.11066   0.502   0.6158    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1

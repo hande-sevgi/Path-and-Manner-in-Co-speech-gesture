@@ -1,0 +1,43 @@
+ Family: ordbeta  ( logit )
+Formula:          rating_prop ~ sentence_type * event_type * polarity + scenario +  
+    (1 | participant_id)
+Data: analysis_data
+
+      AIC       BIC    logLik -2*log(L)  df.resid 
+   1637.4    1771.0    -792.7    1585.4      1234 
+
+Random effects:
+
+Conditional model:
+ Groups         Name        Variance Std.Dev.
+ participant_id (Intercept) 0.08637  0.2939  
+Number of obs: 1260, groups:  participant_id, 140
+
+Dispersion parameter for ordbeta family (): 2.82 
+
+Conditional model:
+                                     Estimate Std. Error z value Pr(>|z|)    
+(Intercept)                           0.89420    0.14653   6.102 1.04e-09 ***
+sentence_type2                        0.35837    0.17877   2.005 0.045005 *  
+sentence_type3                        0.03797    0.17673   0.215 0.829885    
+event_type2                          -0.66120    0.18489  -3.576 0.000349 ***
+event_type3                          -1.75378    0.17733  -9.890  < 2e-16 ***
+polarity2                            -1.98300    0.20282  -9.777  < 2e-16 ***
+scenario2                            -0.02668    0.10051  -0.265 0.790653    
+scenario3                            -0.12882    0.09852  -1.308 0.190989    
+scenario4                            -0.09063    0.09917  -0.914 0.360768    
+scenario5                            -0.23129    0.09830  -2.353 0.018632 *  
+sentence_type2:event_type2            0.82241    0.25543   3.220 0.001283 ** 
+sentence_type3:event_type2           -0.27600    0.24976  -1.105 0.269119    
+sentence_type2:event_type3           -0.05349    0.26589  -0.201 0.840574    
+sentence_type3:event_type3            2.05355    0.25580   8.028 9.92e-16 ***
+sentence_type2:polarity2             -0.17769    0.27475  -0.647 0.517806    
+sentence_type3:polarity2              0.36215    0.26552   1.364 0.172596    
+event_type2:polarity2                 1.05402    0.28258   3.730 0.000191 ***
+event_type3:polarity2                 2.90042    0.26701  10.863  < 2e-16 ***
+sentence_type2:event_type2:polarity2 -1.35933    0.37831  -3.593 0.000327 ***
+sentence_type3:event_type2:polarity2  0.45482    0.36317   1.252 0.210431    
+sentence_type2:event_type3:polarity2  0.35090    0.37770   0.929 0.352865    
+sentence_type3:event_type3:polarity2 -3.46838    0.37824  -9.170  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
