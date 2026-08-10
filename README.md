@@ -13,7 +13,6 @@ Motion events contain several components, including the trajectory of movement (
 The studies compare information expressed through:
 
 * Written linguistic modification
-* Spoken utterances
 * Co-speech gesture
 * Animated visual event contexts
 
