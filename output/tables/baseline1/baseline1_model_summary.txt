@@ -1,5 +1,6 @@
  Family: beta  ( logit )
-Formula:          rating_scaled ~ polarity * event_type + (1 | participant_id) +      (1 | scenario)
+Formula:          rating_scaled ~ polarity * event_type + (1 | participant_id) +  
+    (1 | scenario)
 Data: model_data
 
       AIC       BIC    logLik -2*log(L)  df.resid 
