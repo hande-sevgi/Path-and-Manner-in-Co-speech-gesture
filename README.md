@@ -83,6 +83,12 @@ The principal analyses were conducted in R using packages including:
 * `performance`
 * `DHARMa`
 
+### Model evaluation
+
+Each analysis script evaluates model convergence and verifies that the fitted model has a positive-definite Hessian. Simulation-based residual diagnostics are conducted using `DHARMa`, including tests of residual uniformity, dispersion, and outliers. Diagnostic plots, test results, model metadata, and fitted model objects are saved under `output/`.
+
+Diagnostic significance is treated as evidence of potential model misfit rather than as a reason to suppress results. The ordered-beta sensitivity analyses for Experiments 1 and 2 assess whether the principal findings remain robust when ratings at exactly 0 and 100 are retained. Reproduction-model estimates should therefore be interpreted together with their diagnostic and sensitivity-analysis outputs.
+
 ## Repository contents
 
 ```text
