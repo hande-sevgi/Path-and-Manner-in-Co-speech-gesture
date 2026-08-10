@@ -89,15 +89,17 @@ The principal analyses were conducted in R using packages including:
 Path-and-Manner-in-Co-speech-gesture/
 ├── code/
 │   └── legacy/
-│   │      └── Sevgi_Chapter3.R
-│   └── scripts/
+│   │   └── Sevgi_Chapter3.R
+│   └──  scripts/
 │       ├── 01_validate_inputs.R
 │       ├── 02_prepare_processed_data.R
 │       ├── 03_analyze_experiment_1.R
-│       ├── 04_exp1_extended_analysis.R
+│       ├── 04_exp1_sensitivity_analysis.R
 │       ├── 05_analyze_experiment_2.R
-│       ├── 06_exp2_extended_analysis.R
-│       └── 07_analyze_experiment_3.R
+│       ├── 06_exp2_sensitivity_analysis.R
+│       ├── 07_analyze_baseline_1.R
+│       ├── 08_analyze_baseline_2.R
+│       └── 09_analyze_experiment_3.R
 ├── data/
 │   ├── input/
 │   ├── processed/
