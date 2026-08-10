@@ -86,23 +86,30 @@ The principal analyses were conducted in R using packages including:
 ## Repository contents
 
 ```text
-.
-├── README.md
+Path-and-Manner-in-Co-speech-gesture/
+├── code/
+│   └── legacy/
+│   │      └── Sevgi_Chapter3.R
+│   └── scripts/
+│       ├── 01_validate_inputs.R
+│       ├── 02_prepare_processed_data.R
+│       ├── 03_analyze_experiment_1.R
+│       ├── 04_exp1_extended_analysis.R
+│       ├── 05_analyze_experiment_2.R
+│       ├── 06_exp2_extended_analysis.R
+│       └── 07_analyze_experiment_3.R
 ├── data/
 │   ├── input/
 │   ├── processed/
 │   └── codebook/
 ├── materials/
 │   └── stimuli/
-├── code/
-│   └── legacy/
-├── R/
-├── scripts/
-├── analysis/
-└── output/
-    ├── figures/
-    ├── tables/
-    └── models/
+├── output/
+│   ├── figures/
+│   ├── tables/
+│   └── models/
+├── .gitignore
+└──  README.md
 ```
 
 ### `data/`
@@ -117,11 +124,8 @@ Contains or documents the written, animated, audio-visual, and gestural material
 
 Preserves the original Chapter 3 R analysis unchanged for provenance.
 
-### `R/`
 
-Contains reusable functions for importing, decoding, validating, anonymizing, modeling, and visualizing the data.
-
-### `scripts/`
+### `code/scripts/`
 
 Contains the ordered, study-level analysis scripts.
 
@@ -206,8 +210,6 @@ Manner Modification Across Modalities:
 Insights from Gesture, Sign, and Spoken Language.
 Doctoral dissertation, Harvard University.
 ```
-
-A machine-readable `CITATION.cff` file will be added as part of the repository’s reproducibility update.
 
 ## Author
 
