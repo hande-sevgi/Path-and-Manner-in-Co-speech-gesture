@@ -219,6 +219,13 @@ Manner Modification Across Modalities:
 Insights from Gesture, Sign, and Spoken Language.
 Doctoral dissertation, Harvard University.
 ```
+## AI-assisted workflow disclosure
+
+The development of this reproducible computational workflow was assisted by OpenAI’s ChatGPT and Codex. AI assistance was used to help reorganize the original dissertation materials, refactor the legacy R analysis into numbered scripts, troubleshoot code, design validation checks, structure generated outputs, and improve repository documentation.
+
+The research questions, experimental designs, data collection, original dissertation analyses, and substantive scholarly conclusions are the work of the author. The author reviewed the AI-assisted code, ran the scripts locally, checked participant and observation counts, evaluated model convergence and diagnostics, and compared the reproduced results with the dissertation. AI tools did not independently collect data or make final decisions about data exclusion, statistical interpretation, or reporting.
+
+This disclosure is provided for transparency. Responsibility for the accuracy of the repository and its scholarly interpretation remains with the author.
 
 ## Author
 
