@@ -87,10 +87,11 @@ The principal analyses were conducted in R using packages including:
 
 ```text
 Path-and-Manner-in-Co-speech-gesture/
+├── README.md
 ├── code/
-│   └── legacy/
+│   ├── legacy/
 │   │   └── Sevgi_Chapter3.R
-│   └──  scripts/
+│   └── scripts/
 │       ├── 01_validate_inputs.R
 │       ├── 02_prepare_processed_data.R
 │       ├── 03_analyze_experiment_1.R
@@ -110,8 +111,7 @@ Path-and-Manner-in-Co-speech-gesture/
 │   ├── figures/
 │   ├── tables/
 │   └── models/
-├── .gitignore
-└──  README.md
+└── .gitignore
 ```
 
 ### `data/`
@@ -139,7 +139,7 @@ Contains the ordered validation, preparation, dissertation-reproduction, and sen
 | 04_exp1_sensitivity_analysis.R | Fits a joint ordered-beta sensitivity model for Experiment 1.|
 | 05_analyze_experiment_2.R     | Reproduces the Experiment 2 beta-regression analyses reported in Chapter 3. |
 | 06_exp2_sensitivity_analysis.R    |Fits a joint ordered-beta sensitivity model for Experiment 2. |
-| 7_analyze_baseline_1.R   |Analyses the no-gesture baseline and documents the motion-event inferential subset. |
+| 07_analyze_baseline_1.R   |Analyses the no-gesture baseline and documents the motion-event inferential subset. |
 | 08_analyze_baseline_2.R   |Analyses the complete four-condition gesture baseline without event context. |
 | 09_analyze_experiment_3.R  |Reproduces the co-speech gesture analyses for motion and no-motion conditions. |
 
@@ -183,21 +183,54 @@ GitHub is used for the documented computational workflow. OSF serves as the arch
 
 ## Reproducibility
 
-The repository is currently being reorganized into a fully reproducible research workflow.
+This repository provides an implemented, end-to-end workflow for validating the five source datasets, preparing analysis-ready data, reproducing the dissertation analyses, conducting additional sensitivity analyses, and generating documented outputs.
 
-The target workflow will:
+The workflow:
 
-1. Validate the input datasets.
-2. Decode the experimental condition labels.
-3. Apply documented participant-exclusion criteria.
-4. produce analysis-ready datasets.
-5. Fit the statistical models.
-6. Run model diagnostics.
-7. Generate the reported tables and figures.
-8. Record the R package environment.
-9. Produce a reproducible research report.
+1. validates filenames, variables, participant counts, condition labels, missing values, and rating ranges;
+2. preserves the source datasets without modification;
+3. standardizes variable names and experimental condition labels;
+4. applies the documented participant-exclusion criteria;
+5. creates five analysis-ready datasets;
+6. fits the dissertation-reproduction and sensitivity models;
+7. runs model diagnostics;
+8. generates statistical tables and publication-ready figures;
+9. saves fitted model objects, metadata, and R session information.
 
-Until this reconstruction is complete, the original analysis remains available in `code/legacy/Sevgi_Chapter3.R`.
+### Running the workflow
+
+Open the repository in RStudio and ensure that the repository root is the active project directory.
+
+Install the required packages if they are not already available:
+
+```r
+install.packages(c(
+  "glmmTMB",
+  "emmeans",
+  "ggplot2",
+  "DHARMa"
+))
+```
+
+Run the scripts from the repository root in numerical order:
+
+```r
+source("code/scripts/01_validate_inputs.R")
+source("code/scripts/02_prepare_processed_data.R")
+source("code/scripts/03_analyze_experiment_1.R")
+source("code/scripts/04_exp1_sensitivity_analysis.R")
+source("code/scripts/05_analyze_experiment_2.R")
+source("code/scripts/06_exp2_sensitivity_analysis.R")
+source("code/scripts/07_analyze_baseline_1.R")
+source("code/scripts/08_analyze_baseline_2.R")
+source("code/scripts/09_analyze_experiment_3.R")
+```
+
+Scripts 03, 05, 07, 08, and 09 reproduce the dissertation analyses. Scripts 04 and 06 are additional post-dissertation sensitivity analyses and supplement rather than replace the original models.
+
+The source files under `data/input/` remain unchanged. Analysis-ready datasets are written to `data/processed/`, and generated results are written to `output/`.
+
+Do not use `setwd()` inside the scripts. All file paths are defined relative to the repository root.
 
 ## AI-assisted workflow disclosure
 
