@@ -256,6 +256,14 @@ The datasets contain behavioral judgments collected for academic research. Users
 * Follow the applicable ethical, institutional, and data-use requirements.
 * Cite the project when using its data, materials, or code.
 
+## Ethics and funding
+
+The studies were conducted as part of doctoral research in the Department of Linguistics at Harvard University.
+
+Data collection was supported by a Harvard Mind, Brain, and Behavior graduate student grant.
+
+Public files should be reviewed to ensure that they do not disclose direct identifiers or other information inappropriate for public research dissemination.
+
 ## Citation
 
 If you use this project, please cite:
